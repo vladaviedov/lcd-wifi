@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0)
+project(lcd-wifi VERSION 0.1)
+set(CMAKE_C_FLAGS "-Wall -Wextra" CACHE STRING "" FORCE)
+
+file(GLOB SOURCES src/*.c)
+add_executable(lcd-wifi ${SOURCES})
